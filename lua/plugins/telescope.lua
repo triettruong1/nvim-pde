@@ -12,7 +12,11 @@ return {
 			{"<C-p>", ":Telescope git_files<CR>", desc = "Find in git files"},
 		},
 		config = function()
-			require("telescope").setup()
+			require("telescope").setup({
+        defaults = {
+          layout_strategy = "horizontal",
+        }
+      })
 		end
 	}
 }
