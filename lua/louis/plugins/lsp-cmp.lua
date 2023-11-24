@@ -31,7 +31,7 @@ return {
         -- scroll up and down the documentation window
         ['<C-u>'] = cmp.mapping.scroll_docs(-4),
         ['<C-d>'] = cmp.mapping.scroll_docs(4),
-        ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
+        ["<C-o>"] = cmp.mapping.complete(), -- show completion suggestions
       }),
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
