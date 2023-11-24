@@ -2,8 +2,8 @@
 vim.keymap.set("n", "|", ":vsp<CR>")
 vim.keymap.set("n", "-", ":sp<CR>")
 
-vim.keymap.set("n", "<C-d> ", "<C-d>zz")
-vim.keymap.set("n", "<C-u> ", "<C-u>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 vim.keymap.set("n", "<C-h>", "<C-w><left>")
 vim.keymap.set("n", "<C-j>", "<C-w><down>")
