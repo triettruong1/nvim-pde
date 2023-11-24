@@ -6,8 +6,8 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 ------------- Split keymaps -------------
-  vim.keymap.set("n", "<C-h>", "<C-w><left>")
-  vim.keymap.set("n", "<C-j>", "<C-w><down>")
+vim.keymap.set("n", "<C-h>", "<C-w><left>")
+vim.keymap.set("n", "<C-j>", "<C-w><down>")
 vim.keymap.set("n", "<C-k>", "<C-w><up>")
 vim.keymap.set("n", "<C-l>", "<C-w><right>")
 
