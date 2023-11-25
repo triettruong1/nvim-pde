@@ -1,3 +1,4 @@
+vim.g.mapleader = " "
 ---------------- Core keymaps----------------
 vim.keymap.set("n", "|", ":vsp<CR>")
 vim.keymap.set("n", "-", ":sp<CR>")
@@ -23,5 +24,8 @@ vim.keymap.set("n", "<C-b>", ":NvimTreeToggle<CR>")
 -- vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+
+-- Working with buffers
+vim.keymap.set("n", "<leader>x", ":bp <Bar> bd #<CR>")
 
 ------------------------------------------------

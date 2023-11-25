@@ -32,7 +32,7 @@ vim.opt.numberwidth = 2
 vim.opt.ruler = false
 
 -- disable nvim intro
-vim.opt.shortmess:append "sI"
+vim.opt.shortmess:append("sI")
 
 vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
@@ -46,7 +46,4 @@ vim.opt.updatetime = 250
 
 -- go to previous/next line with h,l,left arrow and right arrow
 -- when cursor reaches end/beginning of line
-vim.opt.whichwrap:append "<>[]hl"
-
-vim.g.mapleader = " "
-
+vim.opt.whichwrap:append("<>[]hl")
