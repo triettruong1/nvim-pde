@@ -28,7 +28,16 @@ return {
 		config = function()
 			local lsp_zero = require("lsp-zero")
 			lsp_zero.setup()
-			lsp_zero.setup_servers({ "lua_ls", "rust_analyzer" })
+			lsp_zero.setup_servers({ "rust_analyzer" })
+			require("lspconfig").lua_ls.setup({
+				settings = {
+					Lua = {
+						diagnostics = {
+							globals = { "vim" },
+						},
+					},
+				},
+			})
 		end,
 	},
 }

@@ -17,9 +17,7 @@ return {
 		priority = 1000,
 		config = function()
 			local vscode = require("vscode")
-			vscode.setup({
-				transparent = true,
-			})
+			vscode.setup({})
 
 			vscode.load()
 		end,
