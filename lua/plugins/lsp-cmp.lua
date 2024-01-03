@@ -13,6 +13,7 @@ return {
 		local luasnip = require("luasnip")
 		local lspkind = require("lspkind")
 
+		luasnip.filetype_extend("all", { "_" })
 		require("luasnip.loaders.from_vscode").lazy_load()
 
 		cmp.setup({
