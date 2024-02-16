@@ -12,14 +12,32 @@ return {
 		-- end,
 	},
 	{
-		"Mofiqul/vscode.nvim",
-		lazy = false,
-		priority = 1000,
+		-- "Mofiqul/vscode.nvim",
+		-- lazy = false,
+		-- priority = 1000,
+		-- config = function()
+		-- 	local vscode = require("vscode")
+		-- 	vscode.setup({})
+		--
+		-- 	vscode.load()
+		-- end,
+	},
+	-- {
+	-- 	"catppuccin/nvim",
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		local catppuccin = require("catppuccin")
+	-- 		catppuccin.setup({
+	-- 			flavour = "macchiato",
+	-- 		})
+	--
+	-- 		catppuccin.load()
+	-- 	end,
+	-- },
+	{
+		"nyoom-engineering/oxocarbon.nvim",
 		config = function()
-			local vscode = require("vscode")
-			vscode.setup({})
-
-			vscode.load()
+			vim.cmd("colorscheme oxocarbon")
 		end,
 	},
 }
