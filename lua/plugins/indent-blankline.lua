@@ -11,6 +11,7 @@ return {
 			"RainbowViolet",
 			"RainbowCyan",
 		}
+
 		local hooks = require("ibl.hooks")
 		local ibl = require("ibl")
 

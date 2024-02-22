@@ -28,6 +28,7 @@ vim.opt.smartcase = true
 vim.opt.mouse = "a"
 
 -- Numbers
+vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.numberwidth = 2
 vim.opt.ruler = false

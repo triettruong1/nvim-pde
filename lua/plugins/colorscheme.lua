@@ -35,9 +35,18 @@ return {
 	-- 	end,
 	-- },
 	{
-		"nyoom-engineering/oxocarbon.nvim",
+		-- "nyoom-engineering/oxocarbon.nvim",
+		-- config = function()
+		-- 	vim.cmd("colorscheme oxocarbon")
+		-- end,
+	},
+	{
+		"mcchrish/zenbones.nvim",
+		priorty = 1000,
+		dependencies = "rktjmp/lush.nvim",
 		config = function()
-			vim.cmd("colorscheme oxocarbon")
+			vim.cmd("colorscheme zenbones")
+			vim.cmd("colorscheme forestbones")
 		end,
 	},
 }

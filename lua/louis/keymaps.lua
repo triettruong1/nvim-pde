@@ -29,3 +29,7 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("n", "<leader>x", ":bp <Bar> bd #<CR>")
 
 ------------------------------------------------
+
+-- LSP
+
+vim.keymap.set("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>")
