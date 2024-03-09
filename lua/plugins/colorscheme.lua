@@ -45,7 +45,6 @@ return {
 		priorty = 1000,
 		dependencies = "rktjmp/lush.nvim",
 		config = function()
-			vim.cmd("colorscheme zenbones")
 			vim.cmd("colorscheme forestbones")
 		end,
 	},

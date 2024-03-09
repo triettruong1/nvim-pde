@@ -16,8 +16,14 @@ return {
 				"williamboman/mason-lspconfig.nvim",
 				config = function()
 					local lsp_zero = require("lsp-zero")
+					lsp_zero.on_attach(function(client, bufnr)
+						lsp_zero.default_keymaps({ buffer = bufnr })
+					end)
 					require("mason-lspconfig").setup({
-						ensure_installed = {},
+						ensure_installed = {
+							"csharp_ls",
+							"tsserver",
+						},
 						handlers = {
 							lsp_zero.default_setup,
 						},
@@ -28,7 +34,8 @@ return {
 		config = function()
 			local lsp_zero = require("lsp-zero")
 			lsp_zero.setup()
-			lsp_zero.setup_servers({ "rust_analyzer" })
+			lsp_zero.setup_servers({ "rust_analyzer", "tsserver" })
+
 			require("lspconfig").lua_ls.setup({
 				settings = {
 					Lua = {
@@ -36,6 +43,20 @@ return {
 							globals = { "vim" },
 						},
 					},
+				},
+				filetypes = {
+					".cs",
+					".cshtml",
+					".cshtml.css",
+				},
+			})
+
+			require("lspconfig").tsserver.setup({
+				filetypes = {
+					".tsx",
+					".ts",
+					".js",
+					".jsx",
 				},
 			})
 		end,
