@@ -3,5 +3,7 @@ return {
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",
 	},
-	opts = {},
+	opts = {
+		theme = "onedark-nvim",
+	},
 }
