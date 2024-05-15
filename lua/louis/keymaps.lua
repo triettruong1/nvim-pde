@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 ---------------- Core keymaps----------------
-vim.keymap.set("n", "|", ":vsp<CR>")
-vim.keymap.set("n", "-", ":sp<CR>")
+vim.keymap.set("n", "|", "<cmd>vsp<CR>")
+vim.keymap.set("n", "-", "<cmd>sp<CR>")
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
@@ -19,14 +19,14 @@ vim.keymap.set("n", "˚", "<C-w>+")
 vim.keymap.set("n", "¬", "<C-w><")
 -----------------------------------------
 
-vim.keymap.set("n", "<C-b>", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<C-b>", "<cmd>NvimTreeToggle<CR>")
 
 -- vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 
 -- Working with buffers
-vim.keymap.set("n", "<leader>x", ":bp <Bar> bd #<CR>")
+vim.keymap.set("n", "<leader>x", "<cmd>bp <Bar> bd #<CR>")
 
 ------------------------------------------------
 
