@@ -51,15 +51,6 @@ return {
 				},
 			})
 
-			require("lspconfig").tsserver.setup({
-				filetypes = {
-					".tsx",
-					".ts",
-					".js",
-					".jsx",
-				},
-			})
-
 			require("lspconfig").emmet_language_server.setup({
 				single_file_support = true,
 				filetypes = {

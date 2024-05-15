@@ -25,6 +25,10 @@ return {
 					luasnip.lsp_expand(args.body)
 				end,
 			},
+			window = {
+				completion = cmp.config.window.bordered(),
+				-- documentation = cmp.config.window.bordered(),
+			},
 			mapping = cmp.mapping.preset.insert({
 				-- confirm completion
 				["<CR>"] = cmp.mapping.confirm({ select = true }),
@@ -43,9 +47,36 @@ return {
 			-- configure lspkind for vs-code like pictograms in completion menu
 			formatting = {
 				format = lspkind.cmp_format({
-					mode = "text_symbol", -- show only symbol annotations
+					mode = "symbol_text", -- show only symbol annotations
 					maxwidth = 50,
-					ellipsis_char = "...",
+					symbol_map = {
+						Text = "",
+						Method = "",
+						Function = "󰡱",
+						Constructor = "",
+						Field = "",
+						Variable = "󰫧",
+						Class = "",
+						Interface = "",
+						Module = "",
+						Property = "",
+						Unit = "塞",
+						Value = "",
+						Enum = "",
+						Keyword = "",
+						Snippet = "",
+						Color = "󰉦",
+						File = "",
+						Reference = "",
+						Folder = "",
+						EnumMember = "",
+						Constant = "",
+						Struct = "פּ",
+						Event = "",
+						Operator = "",
+						TypeParameter = "",
+					},
+					ellipsis_char = "",
 				}),
 			},
 		})
