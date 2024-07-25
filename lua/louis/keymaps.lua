@@ -6,6 +6,11 @@ vim.keymap.set("n", "-", "<cmd>sp<CR>")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
+vim.keymap.set("n", "]q", "<cmd>cnext<CR>)")
+vim.keymap.set("n", "[q", "<cmd>cprev<CR>)")
+vim.keymap.set("n", "]Q", "<cmd>cfirst<CR>)")
+vim.keymap.set("n", "[Q", "<cmd>clast<CR>)")
+
 ------------- Split keymaps -------------
 vim.keymap.set("n", "<C-h>", "<C-w><left>")
 vim.keymap.set("n", "<C-j>", "<C-w><down>")
@@ -29,6 +34,8 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("n", "<leader>x", "<cmd>bp <Bar> bd #<CR>")
 
 ------------------------------------------------
+
+vim.keymap.set("x", "<leader>p", '"_dP')
 
 -- LSP
 

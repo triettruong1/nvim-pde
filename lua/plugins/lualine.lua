@@ -4,6 +4,6 @@ return {
 		"nvim-tree/nvim-web-devicons",
 	},
 	opts = {
-		-- theme = "onedark-nvim",
+		theme = "cyberdream",
 	},
 }

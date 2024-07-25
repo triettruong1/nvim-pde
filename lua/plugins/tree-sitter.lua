@@ -1,6 +1,9 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
+    dependencies =  {
+      "nvim-ts-autotag"
+    },
 		config = function()
 			local treesitter = require("nvim-treesitter.configs")
 			treesitter.setup({

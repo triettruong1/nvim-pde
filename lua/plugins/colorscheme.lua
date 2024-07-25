@@ -11,30 +11,30 @@ return {
 		-- end,
 	},
 	{
-		-- "projekt0n/github-nvim-theme",
-		-- lazy = false,
-		-- priority = 1000,
-		-- config = function()
-		-- 	local github = require("github-theme")
-		-- 	github.setup({})
-		-- 	vim.cmd("colorscheme github_dark_tritanopia")
-		-- end,
-	},
-	{
-		"scottmckendry/cyberdream.nvim",
+		"projekt0n/github-nvim-theme",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			require("cyberdream").setup({
-				-- Recommended - see "Configuring" below for more config options
-				transparent = true,
-				italic_comments = true,
-				hide_fillchars = true,
-				borderless_telescope = true,
-				terminal_colors = true,
-			})
-			vim.cmd("colorscheme cyberdream") -- set the colorscheme
+			local github = require("github-theme")
+			github.setup({})
+			vim.cmd("colorscheme github_dark_tritanopia")
 		end,
+	},
+	{
+		-- "scottmckendry/cyberdream.nvim",
+		-- lazy = false,
+		-- priority = 1000,
+		-- config = function()
+		-- 	require("cyberdream").setup({
+		-- 		-- Recommended - see "Configuring" below for more config options
+		-- 		transparent = true,
+		-- 		italic_comments = true,
+		-- 		hide_fillchars = true,
+		-- 		borderless_telescope = false,
+		-- 		terminal_colors = true,
+		-- 	})
+		-- 	vim.cmd("colorscheme cyberdream") -- set the colorscheme
+		-- end,
 	},
 	{
 		-- "neanias/everforest-nvim",
@@ -43,7 +43,11 @@ return {
 		-- config = function()
 		-- 	local everforest = require("everforest")
 		-- 	everforest.setup({
-		-- 		transparent_background_level = 50,
+  --       background = "soft",
+  --       ui_contrast = "high",
+  --       diagnostic_text_highlight = true,
+  --       float_style = "dim",
+  --       inlay_hints_background = "dimmed"
 		-- 	})
 		--
 		-- 	everforest.load()
@@ -60,18 +64,19 @@ return {
 		-- 	vscode.load()
 		-- end,
 	},
-	-- {
-	-- 	"catppuccin/nvim",
-	-- 	priority = 1000,
-	-- 	config = function()
-	-- 		local catppuccin = require("catppuccin")
-	-- 		catppuccin.setup({
-	-- 			flavour = "macchiato",
-	-- 		})
-	--
-	-- 		catppuccin.load()
-	-- 	end,
-	-- },
+	{
+		-- "catppuccin/nvim",
+		-- priority = 1000,
+		-- config = function()
+		-- 	local catppuccin = require("catppuccin")
+		-- 	catppuccin.setup({
+		-- 		flavour = "macchiato",
+  --       transparent_background = true, -- disables setting the background color.
+		-- 	})
+		--
+		-- 	catppuccin.load()
+		-- end,
+	},
 	{
 		-- "nyoom-engineering/oxocarbon.nvim",
 		-- config = function()

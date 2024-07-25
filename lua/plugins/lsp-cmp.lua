@@ -50,8 +50,8 @@ return {
 					mode = "symbol_text", -- show only symbol annotations
 					maxwidth = 50,
 					symbol_map = {
-						Text = "",
-						Method = "",
+						Text = "",
+						Method = "",
 						Function = "󰡱",
 						Constructor = "",
 						Field = "",
@@ -66,8 +66,8 @@ return {
 						Keyword = "",
 						Snippet = "",
 						Color = "󰉦",
-						File = "",
-						Reference = "",
+						File = "󰈮",
+						Reference = "",
 						Folder = "",
 						EnumMember = "",
 						Constant = "",

@@ -81,6 +81,8 @@ return {
 				map("n", "<leader>hu", gs.undo_stage_hunk, { desc = "[G]it [H]unk [U]ndo" })
 				map("n", "<leader>hR", gs.reset_buffer, { desc = "[G]it [H]unk [R]reset Buffer" })
 				map("n", "<leader>hp", gs.preview_hunk, { desc = "[G]it [H]unk [P]review" })
+				map("n", "]h", gs.next_hunk, { desc = "[G]it [H]unk Next" })
+				map("n", "[h", gs.prev_hunk, { desc = "[G]it [H]unk Prev" })
 				map("n", "<leader>hb", function()
 					gs.blame_line({ full = true })
 				end, { desc = "[G]it [B]lame line" })
