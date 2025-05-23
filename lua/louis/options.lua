@@ -35,6 +35,7 @@ vim.opt.ruler = false
 -- disable nvim intro
 vim.opt.shortmess:append("sI")
 
+vim.o.guifont = "MonaspiceAr Nerd Font:h14" -- text below applies for VimScript
 vim.opt.signcolumn = "yes"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
@@ -50,9 +51,13 @@ vim.opt.updatetime = 250
 vim.opt.whichwrap:append("<>[]hl")
 
 vim.api.nvim_create_autocmd("TextYankPost", {
-	desc = "Highlight when yanking (copying) text",
-	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
-	callback = function()
-		vim.highlight.on_yank()
-	end,
+  desc = "Highlight when yanking (copying) text",
+  group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+  callback = function()
+    vim.highlight.on_yank()
+  end,
 })
+
+vim.g.neovide_refresh_rate = 60
+vim.g.neovide_transparency = 0.4
+vim.g.neovide_window_blurred = true

@@ -1,5 +1,5 @@
 return {
-	"nvim-treesitter/nvim-treesitter-context",
-	lazy = false,
-	opts = {},
+  -- "nvim-treesitter/nvim-treesitter-context",
+  -- lazy = false,
+  -- opts = {},
 }
